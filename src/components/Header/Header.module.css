@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    background-color: #13161a;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
+    border-radius: 20px;
+    border: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.profile {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 25px;
+    padding: 4px 10px 4px 4px;
+    height: 36px;
+    box-sizing: border-box;
+    color: white;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,.7);
+    cursor: pointer;
+}
+
+.profile:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.image_container {
+    width: 28px;
+    height: 28px;
+}
+
+.image {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}

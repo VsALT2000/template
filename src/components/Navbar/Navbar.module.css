@@ -1,0 +1,44 @@
+nav {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 100vh;
+}
+
+ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-align: left;
+    word-break: break-word;
+    list-style-type: none;
+}
+
+a {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.svg {
+    color: inherit;
+    fill: currentcolor;
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+}
