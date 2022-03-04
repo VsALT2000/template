@@ -76,7 +76,7 @@ let initialState = {
         },
         {
             label: 'Рок',
-            type: "rock",
+            type: "undefined_type",
         },
         {
             label: 'Любимые треки',
