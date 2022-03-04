@@ -3,8 +3,6 @@
     height: 100px;
     width: 100%;
     min-width: 320px;
-    padding: 0;
-    margin: 0;
     cursor: pointer;
     background-color: rgba(68, 68, 68, 0.85);
     border-radius: 10px;
@@ -34,36 +32,4 @@
     margin: 0;
     box-sizing: border-box;
     word-break: break-word;
-}
-
-.podcast {
-    background-color: rgb(39, 133, 106);;
-}
-
-.rock {
-    background-color: rgb(133, 53, 39);
-}
-
-.liked {
-    background-color: rgb(73, 39, 133);
-}
-
-.phonk {
-    background-color: rgb(133, 39, 95);
-}
-
-.metal {
-    background-color: rgb(68, 67, 62);
-}
-
-.classic {
-    background-color: rgb(13, 148, 232);
-}
-
-.new {
-    background-color: rgb(20, 232, 13);
-}
-
-.radio {
-    background-color: rgb(232, 215, 13);
 }

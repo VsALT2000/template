@@ -7,20 +7,23 @@ type OwnPropsType = {
     userAlbums: Array<UserAlbumType>
 }
 
+const getTimeName = () => {
+    const time = new Date().getHours();
+    if (time < 6 && time >= 0)
+        return "Спокойной ночи";
+    if (time < 12 && time >= 6)
+        return "Доброе утро";
+    if (time < 18 && time >= 12)
+        return "Продуктивного дня";
+    if (time < 24 && time >= 18)
+        return "Приятного вечера";
+}
+
 const MainPage = (props: OwnPropsType) => {
-    const time = Intl.DateTimeFormat("ru", {hour: 'numeric'}).format(new Date());
-    let nameTime = "";
-    if (Number(time) < 6 && Number(time) >= 0)
-        nameTime = "Спокойной ночи";
-    if (Number(time) < 12 && Number(time) >= 6)
-        nameTime = "Доброе утро";
-    if (Number(time) < 18 && Number(time) >= 12)
-        nameTime = "Продуктивного дня";
-    if (Number(time) < 24 && Number(time) >= 18)
-        nameTime = "Приятного вечера";
+    const timeName = getTimeName();
     return (
         <div className={classes.content_wrapper}>
-            <h1>{nameTime}</h1>
+            <h1>{timeName}</h1>
             <div>
                 <div className={classes.tiles_wrapper}>
                     {

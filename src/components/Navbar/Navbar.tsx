@@ -4,8 +4,8 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <nav>
-            <ul>
+        <nav className={classes.navbar}>
+            <ul className={classes.navbar_ul}>
                 <li>
                     <NavLink to={"/main"}>
                         <svg className={classes.svg} viewBox="0 0 24 24">

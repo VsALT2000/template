@@ -1,7 +1,14 @@
 .tile_wrapper {
-    padding: 0;
-    margin: 0;
     cursor: pointer;
+    --color-without-type: rgb(13, 49, 232);
+    --color-podcast: rgb(39, 133, 106);
+    --color-rock: rgb(133, 53, 39);
+    --color-liked: rgb(73, 39, 133);
+    --color-phonk: rgb(133, 39, 95);
+    --color-metal: rgb(68, 67, 62);
+    --color-classic: rgb(13, 148, 232);
+    --color-new: rgb(20, 232, 13);
+    --color-radio: rgb(232, 215, 13);
 }
 
 .tile_container:hover {
@@ -11,14 +18,17 @@
 .tile_container {
     min-width: 150px;
     position: relative;
+    border-radius: 10px;
 }
 
 .tile_container::after {
     content: "";
     display: block;
-    border: 0;
     padding-bottom: 100%;
-    overflow: hidden;
+}
+
+.without_type {
+    background-color: var(--color-without-type);
 }
 
 .label {
@@ -30,41 +40,33 @@
 }
 
 .podcast {
-    background-color: rgb(39, 133, 106);
-    border-radius: 10px;
+    background-color: var(--color-podcast);
 }
 
 .rock {
-    background-color: rgb(133, 53, 39);
-    border-radius: 10px;
+    background-color: var(--color-rock);
 }
 
 .liked {
-    background-color: rgb(73, 39, 133);
-    border-radius: 10px;
+    background-color: var(--color-liked);
 }
 
 .phonk {
-    background-color: rgb(133, 39, 95);
-    border-radius: 10px;
+    background-color: var(--color-phonk);
 }
 
 .metal {
-    background-color: rgb(68, 67, 62);
-    border-radius: 10px;
+    background-color: var(--color-metal);
 }
 
 .classic {
-    background-color: rgb(13, 148, 232);
-    border-radius: 10px;
+    background-color: var(--color-classic);
 }
 
 .new {
-    background-color: rgb(20, 232, 13);
-    border-radius: 10px;
+    background-color: var(--color-new);
 }
 
 .radio {
-    background-color: rgb(232, 215, 13);
-    border-radius: 10px;
+    background-color: var(--color-radio);
 }

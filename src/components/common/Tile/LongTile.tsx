@@ -6,7 +6,7 @@ const LongTile = (props: UserAlbumType) => {
     return (
         <div className={classes.tile_wrapper}>
             <div className={classes.tile_container}>
-                <img className={classes.image} src={props.link} alt={"Обложка"}/>
+                <img className={classes.image} height={100} width={100} src={props.link} alt={"Обложка"}/>
             </div>
             <h3 className={classes.label}>{props.label}</h3>
         </div>

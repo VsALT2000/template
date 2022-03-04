@@ -1,4 +1,4 @@
-header {
+.app_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,7 @@ header {
     background-color: #13161a;
 }
 
-input {
+.search_input {
     height: 30px;
     width: 100%;
     max-width: 300px;
